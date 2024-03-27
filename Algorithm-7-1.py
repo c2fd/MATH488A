@@ -2,6 +2,7 @@ import numpy as np
 from numpy.linalg import norm
 
 def classical_gram_schmidt(A):
+    # classical gram schmidt algorithm (unstable)
     m, n = A.shape
     Q = np.zeros((m,n))
     R = np.zeros((n,n))
